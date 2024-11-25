@@ -12,12 +12,27 @@ a = [1,2,3,4,5]
 a.reverse()
 print('列表反转结果是: ',a)
 
+a = [1,2,3,4,5]
+b = []
+for i in a:
+    b = [i] + b
+print(b)
+
+
 ### 3.寻找最大值
 def max_num(list):
     return max(list)
 list = [4,7,1,9,3]
 print(max_num(list))
 
+def max_num(list):
+    _max = list[0]
+    for i in list:
+        if (i > _max):
+            _max = i 
+    return _max
+list = [4,7,1,9,3]
+print(max_num(list))
 
 ### 7.计算平均值
 def calculate_scores(scores):   
